@@ -26,7 +26,8 @@
       "supportsTablet": true
     },
     "android": {
-        "package": "com.renanporto.calculadora"
+        "package": "com.renanporto.calculadora",
+        "permissions": []
     }
   }
 }
