@@ -7,11 +7,16 @@ export default class App extends React.Component {
     super(props)
     this.state = {
       display: '',
-      result: ''
+      result: '',
+      lastOperador: null
     }
   }
 
   handleOperator(operator){
+    this.setState({
+      lastOperador: operator
+    })
+
     if ( operator === 'C' ){
       this.setState({
         display: '',
@@ -24,7 +29,9 @@ export default class App extends React.Component {
           result: ''
         })
       }
-    } else {
+    } else if ( (![ 'C', '÷', '*', '-', '+'].includes(this.state.lastOperador) || 
+                ![ 'C', '÷', '*', '-', '+'].includes(operator))
+              ) {
       const display = this.state.display + operator
       let result = this.state.result
       try {
@@ -105,7 +112,7 @@ const styles = StyleSheet.create({
     paddingRight: 10
   },
   result: {
-    flex: 0.5,
+    flex: 0.7,
     backgroundColor: '#EFEFEF',
     fontSize: 40,
     textAlign: 'right',
@@ -113,7 +120,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10
   },
   buttons: {
-    flex: 5,
+    flex: 4,
     flexDirection: 'row'
   },
   line: {
@@ -122,7 +129,7 @@ const styles = StyleSheet.create({
   },
   col1: {
     flex: 3,
-    backgroundColor: '#000000'
+    backgroundColor: '#dddddd'
   },
   btn: {
     flex: 1,
@@ -130,22 +137,23 @@ const styles = StyleSheet.create({
   },
   btnText: {
     textAlign: 'center',
-    fontSize: 50,
-    color: 'white'
+    fontSize: 30,
+    color: 'black'
   },
   col2: {
     flex: 1,
-    backgroundColor: '#0b0b0b'
+    backgroundColor: '#cccccc'
   },
   footer: {
     paddingTop: 10,
     paddingBottom: 10,
-    backgroundColor: '#000000',
-    borderTopWidth: 1,
+    backgroundColor: '#999999',
+    borderTopWidth: 2,
     borderTopColor: 'white'
   },
   made: {
     color: 'white',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: 'bold'
   }
 });
