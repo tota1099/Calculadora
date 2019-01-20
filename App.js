@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
 export default class App extends React.Component {
 
@@ -91,7 +91,7 @@ export default class App extends React.Component {
           </Text>
         </View>
       </View>
-    );
+    )
   }
 }
 
@@ -156,4 +156,4 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'bold'
   }
-});
+})
