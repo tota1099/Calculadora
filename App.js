@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import RF from "react-native-responsive-fontsize"
 
 export default class App extends React.Component {
 
@@ -29,7 +30,7 @@ export default class App extends React.Component {
           result: ''
         })
       }
-    } else if ( (![ 'C', '÷', '*', '-', '+'].includes(this.state.lastOperador) || 
+    } else if ( (![ 'C', '÷', '*', '-', '+'].includes(this.state.lastOperador) ||
                 ![ 'C', '÷', '*', '-', '+'].includes(operator))
               ) {
       const display = this.state.display + operator
@@ -63,24 +64,24 @@ export default class App extends React.Component {
         <Text style={styles.result}>{this.state.result}</Text>
         <View style={styles.buttons}>
           <View style={styles.col1}>
-            { col1Buttons.map( (line, index) => 
+            { col1Buttons.map( (line, index) =>
               <View style={styles.line} key={index}>
-                { line.map ( operator => 
+                { line.map ( operator =>
                   <TouchableOpacity key={operator} style={styles.btn} onPress={() => this.handleOperator(operator)}>
                     <Text style={styles.btnText}>
                       {operator}
-                    </Text> 
+                    </Text>
                   </TouchableOpacity>
                   ) }
-              </View> 
+              </View>
             ) }
           </View>
           <View style={styles.col2}>
-            { col2Buttons.map ( operator => 
+            { col2Buttons.map ( operator =>
               <TouchableOpacity key={operator} style={styles.btn} onPress={() => this.handleOperator(operator)}>
                 <Text style={styles.btnText}>
                   {operator}
-                </Text> 
+                </Text>
               </TouchableOpacity>
               ) }
           </View>
@@ -106,7 +107,7 @@ const styles = StyleSheet.create({
   display: {
     flex: 1,
     backgroundColor: '#EFEFEF',
-    fontSize: 80,
+    fontSize: RF(15),
     textAlign: 'right',
     paddingTop: 30,
     paddingRight: 10
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
   result: {
     flex: 0.7,
     backgroundColor: '#EFEFEF',
-    fontSize: 40,
+    fontSize: RF(8),
     textAlign: 'right',
     paddingRight: 10,
     paddingBottom: 10
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
   },
   btnText: {
     textAlign: 'center',
-    fontSize: 30,
+    fontSize: RF(6),
     color: 'black'
   },
   col2: {
