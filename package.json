@@ -10,7 +10,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
     "expo": "^33.0.0",
     "react": "16.8.3",
-    "react-native-responsive-fontsize": "^0.1.8"
+    "react-native-responsive-fontsize": "^0.2.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"

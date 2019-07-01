@@ -4195,10 +4195,10 @@ react-native-reanimated@1.0.1:
   resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.0.1.tgz#5ecb6a2f6dad0351077ac9b771ca943b7ad6feda"
   integrity sha512-RENoo6/sJc3FApP7vJ1Js7WyDuTVh97bbr5aMjJyw3kqpR2/JDHyL/dQFfOvSSAc+VjitpR9/CfPPad7tLRiIA==
 
-react-native-responsive-fontsize@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/react-native-responsive-fontsize/-/react-native-responsive-fontsize-0.1.8.tgz#3002ffded228e47ed607d760590ef1676b0a5440"
-  integrity sha512-4bWxWLRZAXBXIQM/lcMt271arlxOiae8cGdiq/c54xpwsu0swvK3WJEw71oUxAT4u+TL47BHh3U7yxkGGsOEZQ==
+react-native-responsive-fontsize@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-responsive-fontsize/-/react-native-responsive-fontsize-0.2.0.tgz#17a2002e1c5daf454f923323f1a4ae72626467b5"
+  integrity sha512-QR2rI3luDXmGgd6/dNHAzHSVh4P3CR6iSfCJZ788sM+fbuTFLzPIlUxf/w6KugCWF+VzMksolrNgPeEsR9ezFw==
   dependencies:
     react-native-iphone-x-helper "^1.0.2"
 
