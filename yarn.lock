@@ -623,19 +623,12 @@
     pirates "^4.0.0"
     source-map-support "^0.5.9"
 
-"@babel/runtime@^7.0.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.5.tgz#582bb531f5f9dc67d2fcb682979894f75e253f12"
   integrity sha512-TuI4qpWZP6lGOGIuGWtp9sPluqYICmbk8T/1vpSysqJxRPkudh/ofFWyqdcMsDf2s7KvDL4/YHgKyvcS3g9CJQ==
   dependencies:
     regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.1.2":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
-  integrity sha512-oouEibCbHMVdZSDlJBO6bZmID/zA/G/Qx3H1d3rSNPTD+L8UNKvCat7aKWSJ74zYbm5zWGh0GQN0hKj8zYFTCg==
-  dependencies:
-    regenerator-runtime "^0.12.0"
 
 "@babel/template@^7.0.0", "@babel/template@^7.1.0", "@babel/template@^7.1.2", "@babel/template@^7.2.2":
   version "7.2.2"
@@ -2015,10 +2008,10 @@ expo-web-browser@~5.0.3:
   resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-5.0.3.tgz#c382358ece64a4fad5a5996795faea3446072298"
   integrity sha512-Etue3QfBki4shFChsVd3Of3xvY7KsXoNINKvckiRCmcCjOC5bGiZ+Grhf70YEHVUB2bEcAUeZhC9Tg0Ip2tdEQ==
 
-expo@^33.0.0:
-  version "33.0.6"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-33.0.6.tgz#fe027735b3b2aec4a3289350a416a8bc13817df7"
-  integrity sha512-BhPaEIdB+tEb5Wlp7ux+RDy7/mMPUSR6aCAVH2HlgrIpndFqgaWbm7pjRigE1Aqco0Iwcw/1G5k2spSu180GNA==
+expo@^33.0.7:
+  version "33.0.7"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-33.0.7.tgz#e121044c04120ad6d74df6b0099d5d8194244349"
+  integrity sha512-+mDBQ/KeJnDWg8bUoiuP/OpMXwUYaypgHMDPgH7+AXw8OJuedMhJlH+7UEX2OB+UePnWPcQER411sC7m819pag==
   dependencies:
     "@babel/runtime" "^7.1.2"
     "@expo/vector-icons" "^10.0.1"
@@ -4369,11 +4362,6 @@ regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
-
-regenerator-runtime@^0.12.0:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
-  integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
 
 regenerator-runtime@^0.13.2:
   version "0.13.2"
